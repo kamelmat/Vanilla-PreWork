@@ -1,18 +1,15 @@
-    let pronoun = ['the', 'my'];
-    let adj = ['hardest', 'demure'];
-    let noun = ['space','cheese'];
-    let finale = ['.es', '.dev'];
-
-function generearUrl(){
-    var t = [];
-    for (let p of pronoun) {
-      for (let a of adj) {
-        for (let n of noun) {
-            for(let f of finale)
-            t.push(`${p}${a}${n}${f}`);         
+const generateDomain = () => {
+  let pronoun = ["the", "our"];
+  let adj = ["great", "big"];
+  let noun = ["jogger", "racoon"];
+  let domain = [ ".com", ".net", ".us", ".io"];
+  for (let p of pronoun) {
+    for (let a of adj) {
+      for (let n of noun) {
+          for(let d of domain)
+           console.log(p+a+n+d);
+          }
         }
       }
-    }
-    console.log(t);
-}
-generearUrl();
+  };
+console.log(generateDomain());
