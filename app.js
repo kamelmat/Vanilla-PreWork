@@ -1,3 +1,7 @@
+/**
+ * Esta funcion genera un dominio aleatorio mediante variables
+ * @domain son las diferentes extensiones
+ */
 const generateDomain = () => {
   let pronoun = ["the", "our"];
   let adj = ["great", "big"];
