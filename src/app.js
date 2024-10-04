@@ -9,6 +9,7 @@ window.onload = () => {
 
 let card_head = document.querySelector("#header");
 let card_footer = document.querySelector("#footer");
+let card_value = document.querySelector("#card_value");
 let boton_cargar_carta = document.querySelector(".button_new_card");
 
 boton_cargar_carta.addEventListener("click", () => {
@@ -25,6 +26,9 @@ function generarCartaAleatoria() {
 
   card_head.className = pinta;
   card_footer.className = pinta + " inverse ";
+
+  let valor = generarValorAleatorio();
+  card_value.textContent = valor;
 }
 
 function generarPintaAleatoria() {
@@ -49,4 +53,24 @@ function generarPintaAleatoria() {
     default:
   }
   return pinta;
+}
+
+function generarValorAleatorio() {
+  let valores = [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "J",
+    "Q",
+    "K",
+    "A"
+  ];
+  let num_aleatorio_valor = Math.floor(Math.random() * valores.length);
+  return valores[num_aleatorio_valor];
 }
