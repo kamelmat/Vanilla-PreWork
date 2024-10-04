@@ -4,19 +4,19 @@ import "./style.css";
 
 window.onload = () => {
   //write your code here
-  generarCartaAleatoria();
+  generarCartaAleatoria(card_head, card_footer, card_value);
 };
 
 let card_head = document.querySelector("#header");
 let card_footer = document.querySelector("#footer");
-let card_value = document.querySelector("#card_value");
+let card_value = document.querySelector("#number");
 let boton_cargar_carta = document.querySelector(".button_new_card");
 
 boton_cargar_carta.addEventListener("click", () => {
-  generarCartaAleatoria();
+  generarCartaAleatoria(card_head, card_footer, card_value);
 });
 
-function generarCartaAleatoria() {
+function generarCartaAleatoria(card_head, card_footer, card_value) {
   //alert('Generando carta...');
   card_head.className = "";
   card_footer.className = "";
