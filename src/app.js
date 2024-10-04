@@ -19,6 +19,7 @@ function generarCartaAleatoria() {
   //alert('Generando carta...');
   card_head.className = "";
   card_footer.className = "";
+
   let pinta = generarCartaAleatoria();
   card_head.className = pinta;
   card_footer.className = pinta + " inverse ";
