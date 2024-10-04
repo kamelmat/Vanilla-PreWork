@@ -11,7 +11,7 @@ let card_head = document.querySelector("#header");
 let card_footer = document.querySelector("#footer");
 let boton_cargar_carta = document.querySelector(".button_new_card");
 
-boton_cargar_carta.addEventListener("clic", () => {
+boton_cargar_carta.addEventListener("click", () => {
   generarCartaAleatoria();
 });
 
@@ -23,31 +23,30 @@ function generarCartaAleatoria() {
   //generar un valor aleatorio a
   let pinta = generarPintaAleatoria();
 
-  let pintas = ["hearts", "diamonds", "clubs", "spades"];
-  let randomIndex = Math.floor(Math.random() * pintas.length);
-  let pinta = pintas[randomIndex];
   card_head.className = pinta;
   card_footer.className = pinta + " inverse ";
 }
 
 function generarPintaAleatoria() {
-  let num_aleatorio_pinta = Math.round(Math.random() * 4);
+  let num_aleatorio_pinta = Math.floor(Math.random() * 4) + 1;
+  let pinta;
   switch (num_aleatorio_pinta) {
     case 1:
-      pinta = "heart";
+      pinta = "hearts";
       break;
 
     case 2:
-      pinta = "diamond";
+      pinta = "diamonds";
       break;
 
     case 3:
-      pinta = "spade";
+      pinta = "spades";
       break;
 
     case 4:
-      pinta = "club";
+      pinta = "clubs";
       break;
+    default:
   }
   return pinta;
 }
