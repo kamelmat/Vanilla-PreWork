@@ -9,6 +9,7 @@ window.onload = function() {
   let a = ["el", "nuestro"];
   let b = ["Gran", "Mejor", "Pequeño"];
   let c = ["Lebowsky", "Isra"];
+  let d = [".es", ".com", ".net", ".tv", ".io"];
 
   function generarDominios(a, b, c) {
     let dominios = [];
@@ -16,8 +17,10 @@ window.onload = function() {
     for (let i of a) {
       for (let j of b) {
         for (let k of c) {
-          let dominio = i + j + k + ".com";
-          dominios.push(dominio);
+          for (let l of d) {
+            let dominio = i + j + k + l;
+            dominios.push(dominio);
+          }
         }
       }
     }
