@@ -20,7 +20,12 @@ function generarCartaAleatoria() {
   card_head.className = "";
   card_footer.className = "";
 
-  let pinta = generarCartaAleatoria();
+  //generar un valor aleatorio a
+  let pinta = generarPintaAleatoria();
+
+  let pintas = ["hearts", "diamonds", "clubs", "spades"];
+  let randomIndex = Math.floor(Math.random() * pintas.length);
+  let pinta = pintas[randomIndex];
   card_head.className = pinta;
   card_footer.className = pinta + " inverse ";
 }
