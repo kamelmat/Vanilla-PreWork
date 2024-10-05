@@ -36,19 +36,19 @@ function generarPintaAleatoria() {
   let pinta;
   switch (num_aleatorio_pinta) {
     case 1:
-      pinta = "hearts";
+      pinta = "heart";
       break;
 
     case 2:
-      pinta = "diamonds";
+      pinta = "diamond";
       break;
 
     case 3:
-      pinta = "spades";
+      pinta = "spade";
       break;
 
     case 4:
-      pinta = "clubs";
+      pinta = "club";
       break;
     default:
   }
