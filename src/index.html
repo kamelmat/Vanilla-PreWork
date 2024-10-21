@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generador de excusas</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
 
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de excusas</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
 
-  <body>
-    <div class="container">
-      <row class="">
-        <h1 class="mt-5">Generador de excusas!</h1>
-        <p id="excuse" class="alert alert-warning mt-4">
-          Esto es una excusa de deberes
-        </p>
-        <div class="fixed-bottom p-4 text-center">
-          Made with ❤️ by
-          <a href="https://www.4geeksacademy.com"
-            >4Geeks Academy alumno Alex Perez</a
-          >
-        </div>
-      </row>
-    </div>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+</head>
 
-    <script src="script.js"></script>
-  </body>
+<body>
+  <div class="container align-items-center justify-content-center">
+    <row class="text-center">
+      <h1 class="mt-5">Generador de excusas!</h1>
+      <p id="excuse" class="alert alert-warning mt-4">
+        Esto es una excusa de deberes
+      </p>
+      <div>
+        <button id="reload" class="btn btn-primary" onclick="location.reload()">Recarga la página</button>
+      </div>
+
+      <div class="fixed-bottom p-4 text-center">
+        Made with ❤️ by
+        <a href="https://www.4geeksacademy.com">4Geeks Academy alumno Alex Perez</a>
+
+      </div>
+    </row>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
 </html>
