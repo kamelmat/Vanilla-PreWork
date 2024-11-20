@@ -4,12 +4,12 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  let subjects = ["Mi perro", "Mi abuela", "Un extraterrestre", "El vecino"];
+let subjects = ["Mi perro", "Mi abuela", "Un extraterrestre", "El vecino"];
   let actions = ["se comió", "perdió", "rompió", "escondió"];
   let objects = ["mis deberes", "las llaves", "mi cartera", "el coche"];
   let places = ["en el parque", "en la oficina", "en la playa", "en casa"];
 
+window.onload = function() {
   let getRandomElement = array =>
     array[Math.floor(Math.random() * array.length)];
 
