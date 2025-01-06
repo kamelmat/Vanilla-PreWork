@@ -8,7 +8,7 @@ Empieza a programar un sitio web JS/HTML/CSS en 30 segundos abriendo esta planti
 
 Una vez tu editor de codigo este abierto, instala los paquetes escribiendo: `npm install`.
 
-### ¿Cómo ejecuto mi sitio web para ver los cambios en vivo?
+### ¿Cómo ejecuto mi sitio web para ver los cambios en vivo?.
 
 Escribe en la línea de comandos `$ npm run start` y escribe localhost en el navegador.
 
@@ -18,17 +18,17 @@ Depende del lenguaje, pero tienes `./src/app.js`, `./src/style.css` y `./src/ind
 
 > Nota: recuerda que el flujo de trabajo de JS comienza dentro de `window.onload`.
 
-## Resolución de problemas
+## Solucion de problemas.
 
 ### No veo mis cambios...
 
 Cada vez que cambies cualquier archivo dentro de la carpeta `./src`, la URL pública del sitio web se actualizará automáticamente (es un proceso llamado hot deploy). Recuerda también actualizar limpiando la caché (`command+shift+r` en Mac, `control+shift+r` en PC y Linux).
 
-### ¿Cómo incluyo más imágenes en mi proyecto?
+### ¿Cómo incluyo más imágenes en mi proyecto?.
 
 Agrégalas dentro de la carpeta `./src/assets/img` y luego impórtalas desde cualquiera de tus archivos JS. Ejemplo: `import "../assets/img/rigo-baby.jpg";`.
 
-### ¿Cómo incluyo más archivos JS?
+### ¿Cómo incluyo más archivos JS?.
 
 Simplemente agrega los archivos en la carpeta src e importa los archivos/variables en tu app.js. Ejemplo: `import myVar from "./file2.js"`.
 
