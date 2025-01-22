@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <title>Generador de Memes</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Generador de Excusas</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-primary mt-4"></p>
-      <h1 id="Pregunta">¿Porque no has entregado la tarea?</h1>
-      <h1 id="excusa">Porque mi perro se comio la tarea ayer</h1>
-      <button id="btn" class="bg-warning">Generar nueva excusa</button>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <main>
+      <h1>Generador de Memes</h1>
+      <label for="image-select">Elige una imagen:</label>
+      <select id="image-select">
+        <option
+          value="https://media.istockphoto.com/id/2149825234/photo/ginger-cat-in-a-blue-hoodie-with-a-hood-and-a-gold-chain-around-his-neck-shows-his-tongue.jpg?s=1024x1024&w=is&k=20&c=ZZA-onBD4h5AH3VgaQ-WODHejISzCBUdvJOoIHfNm5A="
+        >
+          Meme 1
+        </option>
+        <option
+          value="https://cdn.pixabay.com/photo/2023/11/24/12/06/duck-8409886_1280.png"
+        >
+          Meme 2
+        </option>
+        <option
+          value="https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg"
+        >
+          Meme 3
+        </option>
+      </select>
+      <button id="generate">Generar Frase</button>
+      <input type="text" id="custom-text" placeholder="Escribe tu frase..." />
+      <div id="meme-container">
+        <img
+          id="meme-image"
+          src="https://media.istockphoto.com/id/2149825234/photo/ginger-cat-in-a-blue-hoodie-with-a-hood-and-a-gold-chain-around-his-neck-shows-his-tongue.jpg?s=1024x1024&w=is&k=20&c=ZZA-onBD4h5AH3VgaQ-WODHejISzCBUdvJOoIHfNm5A="
+          alt="Meme"
+        />
+        <p id="meme-text">Tu frase aparecerá aquí</p>
       </div>
-    </div>
+    </main>
+    <script src="app.js"></script>
   </body>
 </html>

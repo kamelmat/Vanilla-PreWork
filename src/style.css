@@ -1,1 +1,35 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#meme-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#meme-image {
+  width: 100%;
+  height: auto;
+}
+
+#meme-text {
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+}
